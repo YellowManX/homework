@@ -18,3 +18,10 @@ function isPerfectNumbers(min, max){
     return result
 }
 console.log(isPerfectNumbers(1, 500))
+
+
+function time(hours, minutes = '00', seconds = '00'){
+    console.log(`${hours}:${minutes}:${seconds}`)
+}
+
+time(22, 50, 35);
