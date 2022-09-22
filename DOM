@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="window">
+      <div class="inner-window">
+        <div class="inputs">
+          <input placeholder="День рождения" type="text" name="" id="day" />
+        </div>
+        <div class="inputs">
+          <input placeholder="Месяц рождения" type="text" name="" id="month" />
+        </div>
+        <div style="margin-bottom: 20px" class="inputs">
+          <input placeholder="Год рождения" type="text" name="" id="year" />
+        </div>
+        <button onclick="getDate()" class="res_button">Результат</button>
+      </div>
+      <div id="result"></div>
+    </div>
+    <div class="window">
+      <input
+        placeholder="Введите первое число"
+        type="number"
+        name=""
+        id="first_number"
+      />
+      <input
+        placeholder="Введите второе число"
+        style="margin-bottom: 20px"
+        type="number"
+        name=""
+        id="second_number"
+      />
+      <button onclick="getResult()" class="res_button">Результат</button>
+      <div id="result-two"></div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
