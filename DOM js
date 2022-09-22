@@ -1,0 +1,28 @@
+let result = document.getElementById("result");
+let day = document.getElementById("day");
+let month = document.getElementById("month");
+let year = document.getElementById("year");
+
+function getDate() {
+  let now = new Date();
+  let today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  let dob = new Date(+year.value, +month.value, +day.value);
+  let dobnow = new Date(today.getFullYear(), dob.getMonth(), dob.getDate());
+  let age = 0;
+  age = today.getFullYear() - dob.getFullYear();
+  if (today < dobnow) {
+    age = age - 1;
+  }
+  if (age > 10 && age < 20) {
+    result.textContent = `Вам ${age} лет`;
+  } else if (
+    age % 10 === 1 ||
+    age % 10 === 2 ||
+    age % 10 === 3 ||
+    age % 10 === 4
+  ) {
+    result.textContent = `Вам ${age} года`;
+  } else {
+    result.textContent = `Вам ${age} лет`;
+  }
+}
